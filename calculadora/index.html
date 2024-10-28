@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros Compostos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Juros Compostos</h1>
+        <label for="principal">Capital Inicial (P):</label>
+        <input type="text" id="principal" placeholder="R$ 1000" required>
+
+        <label for="rate">Taxa de Juros (%):</label>
+        <input type="text" id="rate" placeholder="5" required>
+
+        <label for="years">Número de Anos (n):</label>
+        <input type="text" id="years" placeholder="3" required>
+
+        <button onclick="calculateCompoundInterest()">Calcular</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
